@@ -9,7 +9,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
+    properties:
+      hibernate: # Цей рівень має бути вкладеним під properties
+        show_sql: true # Використовуйте show_sql, не show-sql для властивостей Hibernate
+        format_sql: true
 server:
   port: 8080
 
