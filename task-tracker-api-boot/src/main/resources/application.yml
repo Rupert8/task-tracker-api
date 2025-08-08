@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: simple-email-sender-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task-tracker
+    username: postgres
+    password: 1111
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        default_schema: public

@@ -1,1 +1,12 @@
 rootProject.name = 'task-tracker-api'
+include 'task-tracker-api-miscellaneous'
+include 'task-tracker-api-miscellaneous:data'
+findProject(':task-tracker-api-miscellaneous:data')?.name = 'data'
+include 'task-tracker-api-miscellaneous:store'
+findProject(':task-tracker-api-miscellaneous:store')?.name = 'store'
+include 'task-tracker-api-core'
+include 'task-tracker-api-core'
+include 'task-tracker-api-shared'
+include 'task-tracker-api-web'
+include 'task-tracker-api-boot'
+
