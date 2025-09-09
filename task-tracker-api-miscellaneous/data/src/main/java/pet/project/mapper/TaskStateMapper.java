@@ -12,6 +12,7 @@ import java.util.List;
 public interface TaskStateMapper {
     @Mapping(target = "leftTaskState", source = "taskState.leftTaskState.id")
     @Mapping(target = "rightTaskState", source = "taskState.rightTaskState.id")
+    @Mapping(target = "project", source = "taskState.project.id")
     TaskStateDto toTaskStateDto(TaskStateEntity taskState);
 
     @Mapping(target = "leftTaskState", source = "taskState.leftTaskState.id")

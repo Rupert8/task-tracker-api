@@ -40,7 +40,7 @@ public class TaskStateController {
     @PatchMapping(CHANGE_TASK_STATE_INFO)
     public TaskStateDto changeTaskStateInfo(@RequestParam Long taskStateId,
                                             @RequestParam String name) {
-        return taskStateService.updateInfoTaskState(taskStateId, name);
+        return taskStateService.updateTaskStateInfo(taskStateId, name);
     }
 
     @PatchMapping(CHANGE_TASK_STATE_POSITION)

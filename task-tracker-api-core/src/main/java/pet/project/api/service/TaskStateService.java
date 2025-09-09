@@ -63,7 +63,7 @@ public class TaskStateService {
     }
 
     @Transactional
-    public TaskStateDto updateInfoTaskState(Long taskStateId, String taskStateName) {
+    public TaskStateDto updateTaskStateInfo(Long taskStateId, String taskStateName) {
         if (taskStateName.trim().isEmpty()) {
             throw new BadRequestException("TaskState name cannot be empty");
         }
@@ -86,14 +86,17 @@ public class TaskStateService {
     public List<TaskStateDto> moveTaskState(Long movedTaskStateId, Long beforeMovedTaskStateId, Long projectId) {
         TaskStateEntity movedTaskState = detachTaskStateFromNeighbor(movedTaskStateId);
 
-        boolean beforeMovedRightTaskStateNotNull = getTaskStateOrThrow(beforeMovedTaskStateId).getRightTaskState() == null;
-
         if (beforeMovedTaskStateId == null) {
             movedFirst(projectId, movedTaskState);
-        } else if (beforeMovedRightTaskStateNotNull) {
-            movedEnd(projectId, movedTaskState);
         } else {
-            movedCenter(beforeMovedTaskStateId, movedTaskState);
+
+            boolean beforeMovedRightTaskStateNotNull = getTaskStateOrThrow(beforeMovedTaskStateId).getRightTaskState() == null;
+
+            if (beforeMovedRightTaskStateNotNull) {
+                movedEnd(projectId, movedTaskState);
+            } else {
+                movedCenter(beforeMovedTaskStateId, movedTaskState);
+            }
         }
 
         return taskStateMapper.toListTaskStateDto(taskStateRepository.streamAllByProjectId(projectId).toList());

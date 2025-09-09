@@ -37,6 +37,10 @@ public class TaskStateDto {
     private Instant createdAt;
 
     @NotNull
-    List<TaskDto> taskList;
+    @JsonProperty("project_id")
+    private Long project;
+
+    @NotNull
+    private List<TaskDto> taskList;
 
 }
