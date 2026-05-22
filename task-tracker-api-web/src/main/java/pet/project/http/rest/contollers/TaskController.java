@@ -28,7 +28,7 @@ public class TaskController {
     }
 
     @PatchMapping(UPDATE_TASK_INFO)
-    public TaskDto updateTask(@RequestParam @NotBlank(message = "Task name cannot be empty") String name,
+    public TaskDto updateTask(@RequestParam(required = false) @NotBlank(message = "Task name cannot be empty") String name,
                               @RequestParam(required = false) String description,
                               @PathVariable("task_id") Long taskId) {
         return taskService.updateTaskInfo(taskId,name,description);
@@ -40,9 +40,10 @@ public class TaskController {
         return taskService.moveTaskToTaskState(task_id,task_state_id);
     }
 
+
     @DeleteMapping(DELETE_TASK)
     public ResponseEntity<Void> deleteTask(@PathVariable Long task_id) {
         taskService.deleteTask(task_id);
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 }
