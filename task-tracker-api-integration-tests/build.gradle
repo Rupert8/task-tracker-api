@@ -1,0 +1,17 @@
+/**
+ * Submodules import
+ */
+dependencies {
+    implementation project(":task-tracker-api-boot")
+    implementation project(":task-tracker-api-core")
+    implementation project(":task-tracker-api-web")
+    implementation project(":task-tracker-api-miscellaneous:store")
+    implementation project(":task-tracker-api-miscellaneous:data")
+}
+
+/**
+ * Spring
+ */
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+}

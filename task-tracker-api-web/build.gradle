@@ -1,0 +1,16 @@
+
+
+dependencies {
+    implementation project(':task-tracker-api-core')
+    implementation project(':task-tracker-api-miscellaneous:data')
+    implementation project(':task-tracker-api-miscellaneous:store')
+}
+
+/**
+ * Spring
+ */
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-shared/pet.project.code.task-tracker-api.task-tracker-api-shared.test.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-shared/pet.project.code.task-tracker-api.task-tracker-api-shared.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-boot/task-tracker-api.task-tracker-api-boot.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-boot/task-tracker-api.task-tracker-api-boot.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-core/task-tracker-api.task-tracker-api-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-core/task-tracker-api.task-tracker-api-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-core/task-tracker-api.task-tracker-api-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-core/task-tracker-api.task-tracker-api-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-integration-tests/task-tracker-api.task-tracker-api-integration-tests.test.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-integration-tests/task-tracker-api.task-tracker-api-integration-tests.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-miscellaneous/data/task-tracker-api.task-tracker-api-miscellaneous.data.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-miscellaneous/data/task-tracker-api.task-tracker-api-miscellaneous.data.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-miscellaneous/store/task-tracker-api.task-tracker-api-miscellaneous.store.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-miscellaneous/store/task-tracker-api.task-tracker-api-miscellaneous.store.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-shared/task-tracker-api.task-tracker-api-shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-shared/task-tracker-api.task-tracker-api-shared.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/task-tracker-api-web/task-tracker-api.task-tracker-api-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/task-tracker-api-web/task-tracker-api.task-tracker-api-web.main.iml" />
+    </modules>
+  </component>
+</project>
